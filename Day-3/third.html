@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Form 1</title>
+    <style>
+      label,input,select{
+        margin-bottom:10px;
+        margin-right: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="fname">First Name: </label>
+      <input type="text" name="fname" id="fname"/>
+      <label for="lname">Last Name: </label>
+      <input type="text" name="lname" id="lfname"/><br/>
+      Date of birth : <input type="date"/>
+      Age : <input type="number"/> <br/>
+      Gender : <select>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <label for="email">Email :</label>
+      <input type="email" id="email"/>
+      <br/>
+      Positions : 
+      <input type="radio" id="jdev" name="dev"/><label for="jdev" >junior developer</label>
+      <input type="radio" id="mdev" name="dev"/><label for="mdev">mid-level developer</label>
+      <input type="radio" id="sdev" name="dev"/><label for="sdev">senior developer</label>
+      <br/>
+      Positions : 
+      <input type="checkbox" id="jdev" /><label for="jdev" >Java</label>
+      <input type="checkbox" id="mdev" /><label for="mdev">JavaScript</label>
+      <input type="checkbox" id="sdev" /><label for="sdev">Python</label>
+      <br/>
+      <label for="pass">Password</label>
+      <input type="password" id="pass"/>
+      <label for="cpass">Confirm Password</label>
+      <input type="password" id="cpass"/>
+      <br/>
+      <button type="submit">submit</button>
+      <input type="reset" value="Reset"/>
+    </form>
+  </body>
+</html>
