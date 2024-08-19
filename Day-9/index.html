@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sections</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <div>
+                <div class="logo">
+                    <h1>Logo</h1>
+                </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#members">Member</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="heroSection" id="home">
+            <div class="heroSectionContent">
+                <h1>Lorem ipsum dolor sit </h1>
+            </div>
+        </div>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                Welcome to our student attendance application. Our goal is to streamline the process of tracking and
+                managing
+                student attendance. With a user-friendly interface and robust features, we aim to make attendance
+                management
+                as
+                efficient as possible.
+            </p>
+            <p>
+                Our team consists of experienced developers dedicated to creating high-quality software solutions for
+                educational institutions. We are committed to continuous improvement and innovation to meet the evolving
+                needs
+                of our users.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <section id="members">
+            <h2>Meet the Team</h2>
+            <div>
+                <h3>Alice Johnson</h3>
+                <p><strong>Role:</strong> Lead Developer</p>
+                <p>Alice is the mastermind behind our application’s architecture and development. With years of
+                    experience
+                    in
+                    software engineering, she ensures the highest quality in our product.</p>
+            </div>
+            <div>
+                <h3>Bob Smith</h3>
+                <p><strong>Role:</strong> UI/UX Designer</p>
+                <p>Bob designs our application’s user interface and experience. His creative vision helps us deliver an
+                    intuitive and engaging user experience.</p>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <button id="scrollToTopBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
+
+    <script>
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+
+        })
+        scrollToTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        })
+
+    </script>
+</body>
+
+</html>
