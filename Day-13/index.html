@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>show details</title>
+  <style>
+  
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: aliceblue;
+    }
+    .container{
+      width: 680px;
+    }
+    .flexible{
+      display: flex;
+      background: lightseagreen;
+    }
+    .flexible button{
+      border: none;
+      background: blueviolet;
+      color: white;
+      padding:4px 8px;
+      margin: 4px 8px;
+    }
+    .flexible button:hover{
+      background: violet;
+    }
+    .data{
+      background: white;
+    }
+    .dd{
+      padding: 10px;
+      display :none;
+    }
+    .dd:nth-child(1){
+      display: flex;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="flexible">
+      <div class="box">
+        <button class="btn" id="first" data-target="fsd">first</button>
+      </div>
+      <div class="box">
+        <button class="btn" id="second" data-target="ssd">second</button>
+      </div>
+      <div class="box">
+        <button class="btn" id="third" data-target="tsd">third</button>
+      </div>
+    </div>
+    <div class="data">
+      <div class="dd" id="fsd">
+          <p>আজ ২০জিবি ১৭৪টাকা ৭দিন। ডায়াল *১২১*৫৬৪৫# বা https://mygp.li/qh</p>
+      </div>
+      <div class="dd" id="ssd">
+          <p>৩০মিনিট (২৪ঘন্টা) ২৪টাকা,ডায়াল *১২১*৪৪০২# বা ভিজিট https://mygp.li/30m</p>
+        </div>
+        <div class="dd" id="tsd">
+          <p>দারুন অফার! ২০জিবি ২৯৪টাকা ৩০দিন।ডায়াল *১২১*৫২০৬#, https://mygp.li/UH</p>
+        </div>
+    </div>
+  </div>
+  
+  <script>
+    const btns = document.querySelectorAll(".btn");
+    const details = document.querySelectorAll('.dd');
+    
+    btns.forEach((btn)=>{
+      btn.addEventListener('click',()=>{
+        details.forEach((data)=>data.style.display='none')
+        document.getElementById(btn.dataset.target).style.display='block';
+      })
+    })
+  </script>
+</body>
+
+</html>
