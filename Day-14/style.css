@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  display: flex;
+}
+.main aside {
+  width: 150px;
+  background-color: black;
+  height: 100vh;
+  position: fixed;
+  transition: width 0.3s ease;
+}
+.main aside:hover .cross {
+  display: block;
+}
+.main aside .names {
+  transition: opacity 0.3s ease;
+}
+.main nav {
+  position: relative;
+  padding-top: 30px;
+}
+.main .right-div {
+  margin-left: 150px;
+  width: 100%;
+}
+.main aside ul li {
+  list-style: none;
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+  margin: 8px auto;
+}
+.main aside ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+}
+.main aside ul li a i {
+  width: 38px;
+  padding-left: 10px;
+}
+.cross {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
+}
+.lines {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
+}
+
+.right-div > div {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.right-div div h1 {
+  text-align: center;
+}
+#home {
+  background-color: aqua;
+}
+#about {
+  background-color: antiquewhite;
+}
+#contact {
+  background-color: blue;
+}
+#members {
+  background-color: blueviolet;
+}
+#footer {
+  background-color: yellowgreen;
+}
