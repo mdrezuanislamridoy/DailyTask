@@ -4,47 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>day-17</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      .container nav ul {
-        display: flex;
-        justify-content: space-around;
-        background-color: black;
-        padding: 10px;
-      }
-      .container nav ul li {
-        list-style-type: none;
-        width: 100%;
-      }
-      .container nav ul li a {
-        display: flex;
-        justify-content: center;
-        color: white;
-        text-decoration: none;
-        padding: 4px 8px;
-        position: relative;
-        transition: all 0.3s ease-in-out;
-      }
-      .container nav ul li a::before {
-        content: "";
-        width: 0px;
-        height: 2px;
-        background-color: rgb(183, 17, 94);
-        bottom: 0;
-        position: absolute;
-        transition: all 0.3s ease-in-out;
-      }
-      .container nav ul li a:hover::before {
-        width: 60px;
-      }
-      .container nav ul li a.active::before {
-        width: 60px;
-      }
-    </style>
   </head>
   <body>
     <div class="container">
@@ -58,15 +17,5 @@
         </ul>
       </nav>
     </div>
-
-    <script>
-      const btns = document.querySelectorAll(".btns");
-      btns.forEach((btn) => {
-        btn.addEventListener("click", function () {
-          btns.forEach((b) => b.classList.remove("active"));
-          this.classList.add("active");
-        });
-      });
-    </script>
   </body>
 </html>
