@@ -3,15 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Day-16</title>
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="gallary">
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
+    <div class="slider">
+      <div class="slides">
+        <div class="slide">
+          <img
+            src="https://images.pexels.com/photos/27372391/pexels-photo-27372391/free-photo-of-a-person-standing-on-top-of-a-mountain-with-rocks.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Image 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://images.pexels.com/photos/27845119/pexels-photo-27845119/free-photo-of-a-blurry-photo-of-trees-in-the-forest.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Image 2"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://images.pexels.com/photos/20284614/pexels-photo-20284614/free-photo-of-balconies-on-residential-building-wall.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Image 3"
+          />
+        </div>
       </div>
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
